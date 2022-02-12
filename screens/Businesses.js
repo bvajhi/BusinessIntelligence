@@ -11,7 +11,7 @@ export default class Businesses extends React.Component {
         data={businessJSON}
         renderItem={(element) => {
           console.log(element);
-          return <BusinessTileComponent/>;
+          return <BusinessTileComponent data={element.item}/>;
         }}
         keyExtractor={(item) => {
           return item.name + item.id;
