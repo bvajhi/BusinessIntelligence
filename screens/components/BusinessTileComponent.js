@@ -2,6 +2,7 @@ import * as React from 'react';
 import {Text, View, StyleSheet} from 'react-native';
 import BaseTileComponent from './BaseTileComponent';
 import RowComponent from './RowComponent';
+import Icon from 'react-native-vector-icons/FontAwesome';
 
 export default function BusinessTileComponent(props) {
   const {data} = props;
@@ -21,6 +22,12 @@ export default function BusinessTileComponent(props) {
             }
           />
         </View>
+        <Icon
+          name="chevron-right"
+          size={20}
+          color="#0074B4"
+          style={styles.icon}
+        />
       </View>
     </BaseTileComponent>
   );
