@@ -9,7 +9,6 @@ export default function Businesses(props) {
     <FlatList
       data={businessJSON}
       renderItem={(element) => {
-        console.log(element);
         return (
           <BusinessTileComponent
             data={element.item}
