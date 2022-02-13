@@ -2,12 +2,12 @@ import * as React from 'react';
 import {View, Text, StyleSheet} from 'react-native';
 
 export default function RowComponent(props) {
-  const {left, right} = props;
+  const {label, value} = props;
 
   return (
     <View style={styles.container}>
-      <Text>{left}</Text>
-      <Text>{right}</Text>
+      <Text style={styles.label}>{label + ': '}</Text>
+      <Text>{value}</Text>
     </View>
   );
 }
@@ -15,5 +15,8 @@ export default function RowComponent(props) {
 const styles = StyleSheet.create({
   container: {
     flexDirection: 'row',
+  },
+  label: {
+    fontWeight: 'bold',
   },
 });
