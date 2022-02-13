@@ -16,15 +16,6 @@ export default function BusinessTileComponent(props) {
           <View>
             <Text style={styles.header}>{data.name}</Text>
             <RowComponent label="City" value={data.location.city} />
-            <RowComponent
-              label="Latest Revenue"
-              value={
-                '$' +
-                data.revenue[0].value
-                  .toFixed(2)
-                  .replace(/\d{1,3}(?=(\d{3})+(?!\d))/g, '$&,')
-              }
-            />
           </View>
           <Icon
             name="chevron-right"
