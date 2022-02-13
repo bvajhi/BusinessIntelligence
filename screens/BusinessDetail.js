@@ -1,8 +1,9 @@
 import * as React from 'react';
-import { View } from 'react-native';
+import {Text} from 'react-native';
 
-export default class BusinessDetail extends React.Component {
+export default class BusinessDetail extends React.PureComponent {
   render() {
-    return <View />;
+    const {name, location} = this.props.route.params.details;
+    return <Text>{name}</Text>;
   }
 }
