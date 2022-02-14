@@ -12,7 +12,7 @@
     "test": "jest",
     "lint": "eslint .",
     "start-reset": "react-native start --resetCache",
-    "startover": "npm run clean && npm run dependencies && npm run start-cache"
+    "startover": "npm run clean && npm run dependencies"
   },
   "dependencies": {
     "@react-native-community/masked-view": "^0.1.10",
