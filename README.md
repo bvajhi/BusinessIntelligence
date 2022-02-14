@@ -1,4 +1,4 @@
-#Important
+### Important
 I created the iOS native component. 
 After cloning or downloading the repo please run `npm run startover` before running `npm run ios`
 
